@@ -1,4 +1,5 @@
 // src/pages/_app.tsx
+import 'antd/dist/antd.css'
 import { withTRPC } from "@trpc/next";
 import type { AppRouter } from "../server/router";
 import type { AppType } from "next/dist/shared/lib/utils";
@@ -7,8 +8,7 @@ import { SessionProvider } from "next-auth/react";
 import "../styles/globals.css";
 
 const MyApp: AppType = ({
-  Component,
-  pageProps: { session, ...pageProps },
+  Component, pageProps: { session, ...pageProps },
 }) => {
   return (
     <SessionProvider session={session}>

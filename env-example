@@ -1,0 +1,19 @@
+# Note that not all variables here might be in use for your selected configuration
+
+# Prisma
+# DATABASE_URL=mysql://username:password@host/rent-a-car?sslaccept=strict
+DATABASE_URL=postgres://username:mypassword@localhost:5432/rentacardb
+
+# Next Auth
+NEXTAUTH_SECRET=
+NEXTAUTH_URL=http://localhost:3000
+
+# Next Auth Google Provider
+GOOGLE_CLIENT_ID=
+GOOGLE_CLIENT_SECRET=
+
+JWT_SECRET=
+
+
+
+NEXT_PUBLIC_AUTHURL=http://localhost:3000

@@ -12,6 +12,7 @@ export const serverSchema = z.object({
   NEXTAUTH_URL: z.string().url(),
   GOOGLE_CLIENT_ID: z.string(),
   GOOGLE_CLIENT_SECRET: z.string(),
+  JWT_SECRET: z.string(),
 });
 
 /**
@@ -21,6 +22,7 @@ export const serverSchema = z.object({
  */
 export const clientSchema = z.object({
   // NEXT_PUBLIC_BAR: z.string(),
+  NEXT_PUBLIC_AUTH_URL: z.string()
 });
 
 /**
@@ -31,4 +33,5 @@ export const clientSchema = z.object({
  */
 export const clientEnv = {
   // NEXT_PUBLIC_BAR: process.env.NEXT_PUBLIC_BAR,
+  NEXT_PUBLIC_AUTH_URL: process.env.NEXT_PUBLIC_AUTHURL
 };
